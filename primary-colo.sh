@@ -6,7 +6,7 @@
 # (4) sh primary-colo.sh
 
 disk_path=/mnt/sdb/pure_IMG/redhat/redhat-7.0.img
-dst=3.3.3.8
+dst=192.168.2.88
 forward_dev=eth1
 
 net_param="-netdev tap,id=hn0,script=/etc/qemu-ifup,downscript=/etc/qemu-ifdown,colo_script=./scripts/colo-proxy-script.sh,colo_nicname=$forward_dev,vhost=on -device virtio-net-pci,id=net-pci0,netdev=hn0"

@@ -8,7 +8,7 @@
 disk_path=/mnt/sdb/pure_IMG/redhat/redhat-7.0.img
 active_disk=/mnt/ramfs/active_disk.img
 hidden_disk=/mnt/ramfs/hidden_disk.img
-nbdserver=3.3.3.8:8889
+nbdserver=192.168.2.88:8889
 forward_dev=eth1
 
 tmp_disk_size=`./qemu-img info $disk_path |grep 'virtual size' |awk  '{print $3}'`
